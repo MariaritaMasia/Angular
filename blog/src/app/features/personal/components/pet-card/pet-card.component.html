@@ -1,0 +1,14 @@
+<mat-card class="pet-card mat-elevation-z10">
+  <mat-card-header>
+    <mat-card-title>#{{index+1}} - {{pet.name}}</mat-card-title>
+    <mat-card-subtitle>{{pet.race}} - {{pet.age}}</mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image src="assets/img/{{pet.image}}.jpg" />
+  <mat-card-content>
+    <p>{{pet.description}}</p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-stroked-button>Like</button>
+    <button mat-stroked-button>Delete</button>
+  </mat-card-actions>
+</mat-card>

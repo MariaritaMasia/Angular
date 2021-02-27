@@ -1,0 +1,5 @@
+<div class="w-100 d-flex justify-content-start">
+    <div class="pets-card-container" *ngFor="let pet of petsList; let index = index;">
+        <kuma-pet-card [pet]="pet" [index]="index"></kuma-pet-card>
+    </div>
+</div>

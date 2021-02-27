@@ -1,0 +1,6 @@
+<div style="border: 1px solid black; padding: 1rem; margin: 1rem;">
+    <p>Event: {{childEvent}}</p>
+    <p>Event2: {{childEvent2}}</p>
+    <kuma-child [listaTopi]="listaTopi" [childDescription]="'Degu'" childDescription2="Degu" 
+    (notifyParent)="assign($event)" (notifyParent2)="childEvent2=$event"></kuma-child>
+</div>

@@ -1,0 +1,22 @@
+<p>{{childDescription}}</p>
+<p>{{childDescription2}}</p>
+<div>
+  <h1>Lista Topi</h1>
+  <div *ngFor="let topo of listaTopi; let index = index;">
+    <p>#: {{index+1}}</p>
+    <p>Name: {{topo.name}}</p>
+    <p>Age: {{topo.age}}</p>
+    <p>Race: {{topo.race}}</p>
+    <p>Color: {{topo.color}}</p>
+    <p><img src="assets/img/{{topo.image}}.jpg"/></p>
+  </div>
+</div>
+
+<button type="button" (click)="notify()">Notifica</button>
+<button type="button" (click)="notify2()">Notifica2</button>
+<button type="button" (click)="assignDescription()">Assegna Descrizione</button>
+
+<div style="border: 1px solid purple; padding: 1rem;">
+  <p>Evento: {{nephewEvent}}</p>
+  <kuma-nephew [descriptionDegu]="descriptionDegu" (notifyChild)="assign($event)"></kuma-nephew>
+</div>
